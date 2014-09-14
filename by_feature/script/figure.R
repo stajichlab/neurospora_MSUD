@@ -1,0 +1,17 @@
+par(bg =NA)
+sizef <- read.table("4PF.txt",header=T,sep="\t",row.names=1)
+barplot(t(sizef/1000000),axes = FALSE, ylim=c(0,3),space=0.1,cex.axis=0.8,las=1,cex=0.8,names=sizef$V1,legend=F,col=rainbow(7,start=0.1, end=.91),beside=F,density=NULL,border=NA)
+my.axis <-paste(axTicks(2),"MM",sep="") 
+axis(2,at=axTicks(2), labels=my.axis,font.axis=1,)
+
+par(bg =NA)
+sizef <- read.table("2PF.txt",header=T,sep="\t",row.names=1)
+barplot(t(sizef/1000000),axes = FALSE, ylim=c(0,1.5),space=0.1,cex.axis=0.8,las=1,cex=0.8,names=sizef$V1,legend=F,col=rainbow(7,start=0.1, end=.91),beside=F,density=NULL,border=NA)
+my.axis <-paste(axTicks(2),"MM",sep="") 
+axis(2,at=axTicks(2), labels=my.axis,font.axis=1,)
+
+par(bg =NA)
+sizef <- read.table("PP.txt",header=T,sep="\t",row.names=1)
+barplot(t(sizef/1000000),axes = FALSE,ylim=c(0,2.5),space=0.1,cex.axis=0.8,las=1,cex=0.8,names=sizef$V1,legend=T,col=rainbow(7,start=0.1, end=.91),beside=F,args.legend=c(bty="n"),density=NULL, border=NA)
+my.axis <-paste(axTicks(2),"MM",sep="")
+axis(2,at=axTicks(2), labels=my.axis,font.axis=1,)
