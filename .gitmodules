@@ -1,0 +1,6 @@
+[submodule "genome-scripts"]
+	path = genome-scripts
+	url = git://github.com/hyphaltip/genome-scripts.git
+[submodule "fungaltools"]
+	path = fungaltools
+	url = git://github.com/hyphaltip/fungaltools.git
