@@ -1,3 +1,8 @@
+*.bai
+*.fai
+*~
+.#*
+#*
 /blib/
 /.build/
 _build/
